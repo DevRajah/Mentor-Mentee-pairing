@@ -30,7 +30,7 @@ async function pairMentorsToMentees(mentors, mentees) {
         await Pairing.create({
           mentorName: mentor.name,
           menteeName: mentee.name,
-          field: mentee.stack
+          stack: mentee.stack
         });
       }
     } else {
