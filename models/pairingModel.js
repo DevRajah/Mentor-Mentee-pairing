@@ -18,6 +18,6 @@ const pairingSchema = new mongoose.Schema({
   timestamps: true
 });
 
-pairingSchema.index({ mentorName: 1, menteeName: 1 }, { unique: true }); // prevent duplicates
+pairingSchema.index({ mentorName: 1, menteeName: 1 }, { unique: true }); 
 
 module.exports = mongoose.model('Pairing', pairingSchema);
